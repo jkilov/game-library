@@ -8,6 +8,7 @@ import PlatformSelector from "./components/PlatformSelector";
 import { Platform } from "./hooks/useGames";
 import SortSelector from "./components/SortSelector";
 
+
 export interface GameQuery {
   genre: Genre | null;
   platform: Platform | null
@@ -31,6 +32,7 @@ const [gameQuery, setGameQuery] = useState<GameQuery>({} as GameQuery)
   >
     <GridItem area="nav">
       <NavBar />
+    
     </GridItem>
     <Show above="lg">
     <GridItem area="aside" paddingX={5}>
