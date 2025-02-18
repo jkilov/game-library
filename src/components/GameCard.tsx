@@ -8,6 +8,7 @@ import Emoji from './Emoji'
 
 
 
+
 interface Props {
   game: Game
 }
@@ -24,8 +25,7 @@ return (
           < PlatformIconList platforms={game.parent_platforms.map(p => p.platform)}/>
           < CriticScore score={game.metacritic}/>
           </HStack> 
-          < Heading fontSize='2xl'>{game.name}</Heading>
-          < Emoji rating={game.rating_top} />
+          < Heading fontSize='2xl'>{game.name}< Emoji rating={game.rating_top} /></Heading>
          
       </CardBody>
   </Card>
